@@ -1,3 +1,73 @@
-body {
-  background: green;
+.test {
+  height: 1000px;
+  width: 86%;
+  background: red;
+  margin: auto;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 7%;
+  z-index: -10;
+}
+header {
+  width: 86%;
+  margin: auto;
+  padding-top: 10px;
+}
+header nav {
+  font-family: 'Open Sans';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+header nav .theBrand:hover {
+  cursor: pointer;
+}
+header nav .theLinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header nav .theLinks .theLinksList {
+  list-style: none;
+  margin-top: 0;
+  padding-right: 0;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+header nav .theLinks .theLinksList .theLink {
+  margin-left: 50px;
+  padding-bottom: 7px;
+}
+header nav .theLinks .theLinksList .theLink a {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+}
+header nav .theLinks .theLinksList .theLink a:hover {
+  cursor: pointer;
+  border-bottom: 5px solid black;
+}
+header nav .theLinks .theLinksList .selected {
+  border-bottom: 5px solid black;
 }

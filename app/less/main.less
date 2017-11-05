@@ -1,3 +1,66 @@
-body{
-    background: green;
+.test{
+    height: 1000px;
+    width: 86%;
+    background: red;
+    margin: auto;
+    opacity: .1;
+    position: absolute;
+    top:0;
+    left: 7%;
+    z-index: -10;
+}
+header{
+    width: 86%;   
+    margin: auto;
+    padding-top: 10px; 
+    nav{
+        font-family: 'Open Sans';
+        display: flex;
+        a{
+            text-decoration: none;
+            color: #000000;
+            text-transform: uppercase;
+        }
+        .theBrand{
+            &:hover{
+                cursor: pointer;
+            }
+            a{ 
+            }
+        }
+        .theLinks{
+            // background: green;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;            
+            .theLinksList{
+                list-style: none;
+                margin-top: 0;
+                padding-right: 0;
+                padding-top: 10px;
+                // padding-bottom: 10px;
+                // background: pink;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                .theLink{
+                    // background: red;
+                    margin-left: 50px;
+                    padding-bottom: 7px;
+                    a{
+                        font-size: 20px;
+                        color: #000000;
+                        font-weight: 700;
+                        &:hover {
+                            cursor: pointer;
+                            border-bottom: 5px solid black;            
+                        }
+                    }
+                }
+                .selected{
+                    border-bottom: 5px solid black;
+                }
+            }
+        }
+    }
 }
