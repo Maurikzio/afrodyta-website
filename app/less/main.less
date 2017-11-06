@@ -1,16 +1,16 @@
 .test{
-    height: 1000px;
-    width: 86%;
+    height: 2500px;
+    width: 89.2%;
     background: red;
     margin: auto;
     opacity: .1;
     position: absolute;
     top:0;
-    left: 7%;
+    left: 5.4%;
     z-index: -10;
 }
 header{
-    width: 86%;   
+    width: 89.2%;   
     margin: auto;
     padding-top: 10px; 
     nav{
@@ -60,6 +60,163 @@ header{
                 .selected{
                     border-bottom: 5px solid black;
                 }
+            }
+        }
+    }
+}
+.initialSection{
+    width: 89.2%;   
+    margin: auto;
+    margin-top: 80px;
+    position: relative;  
+    &:hover .theBanner{
+        display: block;         
+    }
+    img{
+        width: 100%;       
+    }
+    .theBanner{
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        display: none;
+        p{
+            font-size: 90px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-family: "Open Sans";
+            letter-spacing: 7.9px;
+            text-shadow: 0 0 20px rgba(48, 48, 48, 0.7);
+            display: inline;
+            &:hover{
+                cursor: pointer;
+            }
+            a{
+                color: #ffffff; 
+                text-decoration: none;           
+            }
+        }
+    }
+}
+.gallery{
+    width: 89.2%;   
+    margin: auto;
+    background: rgba(6, 231, 6, 0.3);
+    font-family: "Open Sans";
+    
+    .first{
+        background: rgb(238, 173, 173);
+        display: flex;
+        padding-bottom: 40px;
+        margin: 10px 0;
+        .info{
+            border: .1px dashed red;  
+            padding-top: 19px;                      
+            h2{
+                font-size: 60px;
+                font-family: "Open Sans";
+                text-transform: uppercase;
+                font-weight: 600;
+                border: .1px dashed white;
+                margin: 0;
+                width: 75%;
+            }
+            p{
+                font-family: "Open Sans";
+                font-size: 15px;
+                width: 75%;
+                border: .1px dashed white;
+                margin-top: 45px;
+                margin-bottom: 35px;
+            }
+            a{
+                background: gold;
+                text-decoration: none;
+                font-weight: bolder;
+                margin-bottom: 50px;
+            }
+        }
+        .imgInfo{
+            border: .1px dashed black;            
+            p{
+                text-align: right;
+                border: .1px dashed white;
+                margin: 0;
+                font-family: 'Open Sans';
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            img{
+                border: .1px dashed white;   
+                margin: 0;
+                padding-top: 0;
+                padding-bottom: 0; 
+                max-width: auto; 
+                height: auto;         
+            }
+        }
+    }
+    .galleryCenter{
+        display: flex;
+        justify-content: space-between;
+        .second{
+            border: .1px dashed red;                            
+            p{
+                border: .1px dashed white;                
+                font-size: 25px;
+                font-weight: bolder;
+                margin: 0;
+                width: 75%;
+            }
+            h2{
+                font-weight: bolder;
+                font-size: 79px;
+                letter-spacing: 7.9px;
+                text-transform: uppercase;
+            }
+            img{
+                max-width: 542px;
+            }
+
+        }
+        .third{
+            border: .1px dashed black;   
+            display: flex;
+            flex-direction: column;   
+            align-items: flex-end;                                  
+            h2{
+                border: .1px dashed black;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: right;
+                margin-top: 25px;             
+                span{
+                    font-size: 60px;
+                }
+            }
+            .thirdDescription{
+                width: 80%;
+                border: .1px dashed black;  
+                margin-right: 13%; 
+                line-height: 30px;            
+            }
+            a{
+                text-decoration: none;
+                color: #000000;
+                font-weight: bolder;
+                background: gold;
+                margin-right: 76.5%;
+                margin-bottom: 50px;
+            }
+            .thirdDate{
+                font-weight: bolder;
+                font-size: 25px;
+                border: .1px dashed black;   
+                margin: 0;                            
+            }
+            img{
+                max-width: 542px;
             }
         }
     }
